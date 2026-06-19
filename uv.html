@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UV Index Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        .uv-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+        .uv-meter {
+            width: 300px;
+            height: 50px;
+            background: linear-gradient(to right, #00ff00, #ffff00, #ff7f00, #ff0000, #8b00ff);
+            border-radius: 25px;
+            margin: 30px auto;
+            position: relative;
+        }
+        .uv-indicator {
+            position: absolute;
+            width: 20px;
+            height: 70px;
+            background: #333;
+            top: -10px;
+            left: 60%;
+            border-radius: 5px;
+        }
+        .uv-value {
+            font-size: 64px;
+            color: #f5576c;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .uv-category {
+            font-size: 24px;
+            color: #666;
+        }
+        .protection-tips {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">☀️ UV Index</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today.html">Today</a></li>
+                <li><a href="uv.html">UV Index</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>☀️ UV Index Report</h1>
+        
+        <div class="uv-card">
+            <h2>Current UV Level</h2>
+            
+            <div class="uv-meter">
+                <div class="uv-indicator"></div>
+            </div>
+
+            <div class="uv-value">7</div>
+            <div class="uv-category">High</div>
+
+            <div class="protection-tips">
+                <h3 style="color: #856404; margin-bottom: 15px;">⚠️ Protection Recommended</h3>
+                <ul style="color: #856404; line-height: 2;">
+                    <li>Wear sunscreen SPF 30+</li>
+                    <li>Seek shade during midday hours</li>
+                    <li>Wear protective clothing</li>
+                    <li>Use sunglasses</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 20px; color: #666;">
+                <p><strong>Peak UV Time:</strong> 12:00 PM - 3:00 PM</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

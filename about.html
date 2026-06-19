@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        .about-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            line-height: 1.8;
+        }
+        h2 {
+            color: #667eea;
+            margin: 30px 0 15px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        .features-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        .features-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ℹ️ About</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today.html">Today</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>ℹ️ About Weather App</h1>
+        
+        <div class="about-card">
+            <h2>Welcome to Weather App</h2>
+            <p>
+                Weather App is your trusted source for accurate and real-time weather information from around the world. 
+                We provide comprehensive weather forecasts with 100% accuracy to help you plan your day better.
+            </p>
+
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to provide the most accurate, reliable, and easy-to-understand weather information 
+                to people worldwide. We believe everyone deserves access to quality weather data to make informed decisions.
+            </p>
+
+            <h2>Features We Offer</h2>
+            <ul class="features-list">
+                <li>Real-time weather updates</li>
+                <li>7-day and 14-day weather forecasts</li>
+                <li>Accurate rainfall predictions</li>
+                <li>Humidity and wind information</li>
+                <li>Air Quality Index (AQI) monitoring</li>
+                <li>UV Index reports</li>
+                <li>Sunrise and sunset timings</li>
+                <li>Cyclone and storm alerts</li>
+                <li>Global weather coverage</li>
+            </ul>
+
+            <h2>Why Choose Us?</h2>
+            <p>
+                ✓ <strong>100% Accuracy:</strong> We use advanced meteorological data and algorithms<br>
+                ✓ <strong>Real-time Updates:</strong> Weather information updated every minute<br>
+                ✓ <strong>Global Coverage:</strong> Weather data for cities worldwide<br>
+                ✓ <strong>User-Friendly:</strong> Simple and intuitive interface<br>
+                ✓ <strong>Free Service:</strong> All features available at no cost
+            </p>
+
+            <h2>Contact Information</h2>
+            <p>
+                Have questions or feedback? We'd love to hear from you!<br>
+                📧 Email: support@weatherapp.com<br>
+                📞 Phone: +91 1234567890
+            </p>
+        </div>
+    </div>
+</body>
+</html>

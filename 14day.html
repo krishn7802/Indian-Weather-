@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-Day Weather Forecast</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 42px;
+        }
+        .forecast-table {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        tr:hover {
+            background: #f8f9fa;
+        }
+        .temp {
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .icon {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌦️ Weather App</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today.html">Today</a></li>
+                <li><a href="7day.html">7-Day</a></li>
+                <li><a href="14day.html">14-Day</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>📊 14-Day Weather Forecast</h1>
+        
+        <div class="forecast-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Day</th>
+                        <th>Icon</th>
+                        <th>Temperature</th>
+                        <th>Condition</th>
+                        <th>Rain %</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jan 15</td>
+                        <td>Monday</td>
+                        <td class="icon">☀️</td>
+                        <td class="temp">28°C</td>
+                        <td>Sunny</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 16</td>
+                        <td>Tuesday</td>
+                        <td class="icon">⛅</td>
+                        <td class="temp">27°C</td>
+                        <td>Partly Cloudy</td>
+                        <td>20%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 17</td>
+                        <td>Wednesday</td>
+                        <td class="icon">☁️</td>
+                        <td class="temp">25°C</td>
+                        <td>Cloudy</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 18</td>
+                        <td>Thursday</td>
+                        <td class="icon">🌧️</td>
+                        <td class="temp">23°C</td>
+                        <td>Rainy</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 19</td>
+                        <td>Friday</td>
+                        <td class="icon">⛈️</td>
+                        <td class="temp">22°C</td>
+                        <td>Thunderstorm</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 20</td>
+                        <td>Saturday</td>
+                        <td class="icon">🌦️</td>
+                        <td class="temp">24°C</td>
+                        <td>Light Rain</td>
+                        <td>60%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 21</td>
+                        <td>Sunday</td>
+                        <td class="icon">☀️</td>
+                        <td class="temp">29°C</td>
+                        <td>Clear</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 22</td>
+                        <td>Monday</td>
+                        <td class="icon">☀️</td>
+                        <td class="temp">30°C</td>
+                        <td>Hot & Sunny</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 23</td>
+                        <td>Tuesday</td>
+                        <td class="icon">🌤️</td>
+                        <td class="temp">28°C</td>
+                        <td>Mostly Sunny</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 24</td>
+                        <td>Wednesday</td>
+                        <td class="icon">⛅</td>
+                        <td class="temp">26°C</td>
+                        <td>Partly Cloudy</td>
+                        <td>25%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 25</td>
+                        <td>Thursday</td>
+                        <td class="icon">☁️</td>
+                        <td class="temp">24°C</td>
+                        <td>Overcast</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 26</td>
+                        <td>Friday</td>
+                        <td class="icon">🌧️</td>
+                        <td class="temp">23°C</td>
+                        <td>Showers</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 27</td>
+                        <td>Saturday</td>
+                        <td class="icon">🌦️</td>
+                        <td class="temp">25°C</td>
+                        <td>Scattered Showers</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td>Jan 28</td>
+                        <td>Sunday</td>
+                        <td class="icon">☀️</td>
+                        <td class="temp">27°C</td>
+                        <td>Sunny</td>
+                        <td>10%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>p

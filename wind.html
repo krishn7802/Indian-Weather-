@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind Speed & Direction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        .wind-card {
+            background: white;
+            color: #333;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+        .compass {
+            width: 250px;
+            height: 250px;
+            border: 5px solid #0072ff;
+            border-radius: 50%;
+            margin: 30px auto;
+            position: relative;
+            background: #f0f4f8;
+        }
+        .arrow {
+            width: 10px;
+            height: 100px;
+            background: #ff6b6b;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%) rotate(45deg);
+            border-radius: 5px 5px 0 0;
+        }
+        .wind-speed {
+            font-size: 48px;
+            color: #0072ff;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .direction {
+            font-size: 24px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">💨 Wind Info</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today.html">Today</a></li>
+                <li><a href="wind.html">Wind</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>💨 Wind Speed & Direction</h1>
+        
+        <div class="wind-card">
+            <h2>Current Wind Information</h2>
+            
+            <div class="compass">
+                <div class="arrow"></div>
+                <div style="position: absolute; top: 10px; left: 50%; transform: translateX(-50%); font-weight: bold;">N</div>
+                <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); font-weight: bold;">S</div>
+                <div style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-weight: bold;">W</div>
+                <div style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-weight: bold;">E</div>
+            </div>
+
+            <div class="wind-speed">15 km/h</div>
+            <div class="direction">Direction: North-East</div>
+            
+            <div style="margin-top: 30px;">
+                <p style="font-size: 18px; color: #666;">Wind Gust: 22 km/h</p>
+                <p style="font-size: 18px; color: #666; margin-top: 10px;">Beaufort Scale: Light Breeze (3)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

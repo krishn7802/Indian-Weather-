@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Day Weather Forecast</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 42px;
+        }
+        .forecast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .day-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .day-card:hover {
+            transform: translateY(-10px);
+        }
+        .day-name {
+            font-size: 20px;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .day-icon {
+            font-size: 60px;
+            margin: 15px 0;
+        }
+        .day-temp {
+            font-size: 28px;
+            color: #ff6b6b;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .day-desc {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌦️ Weather App</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today.html">Today</a></li>
+                <li><a href="7day.html">7-Day</a></li>
+                <li><a href="14day.html">14-Day</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>📅 7-Day Weather Forecast</h1>
+        
+        <div class="forecast-grid">
+            <div class="day-card">
+                <div class="day-name">Monday</div>
+                <div class="day-icon">☀️</div>
+                <div class="day-temp">28°C</div>
+                <div class="day-desc">Sunny</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-name">Tuesday</div>
+                <div class="day-icon">⛅</div>
+                <div class="day-temp">27°C</div>
+                <div class="day-desc">Partly Cloudy</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-name">Wednesday</div>
+                <div class="day-icon">☁️</div>
+                <div class="day-temp">25°C</div>
+                <div class="day-desc">Cloudy</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-name">Thursday</div>
+                <div class="day-icon">🌧️</div>
+                <div class="day-temp">23°C</div>
+                <div class="day-desc">Rainy</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-name">Friday</div>
+                <div class="day-icon">⛈️</div>
+                <div class="day-temp">22°C</div>
+                <div class="day-desc">Thunderstorm</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-name">Saturday</div>
+                <div class="day-icon">🌦️</div>
+                <div class="day-temp">24°C</div>
+                <div class="day-desc">Light Rain</div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-name">Sunday</div>
+                <div class="day-icon">☀️</div>
+                <div class="day-temp">29°C</div>
+                <div class="day-desc">Clear Sky</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

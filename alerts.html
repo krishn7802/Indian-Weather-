@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclone & Storm Alerts</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        .alert-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff6b6b;
+        }
+        .alert-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .alert-icon {
+            font-size: 40px;
+        }
+        .alert-title {
+            font-size: 24px;
+            color: #ff6b6b;
+        }
+        .alert-severity {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #ff6b6b;
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-left: auto;
+        }
+        .no-alerts {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌀 Storm Alerts</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today.html">Today</a></li>
+                <li><a href="alerts.html">Alerts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>🌀 Cyclone & Storm Alerts</h1>
+        
+        <div class="alert-card no-alerts">
+            <div class="alert-header">
+                <div class="alert-icon">✅</div>
+                <div>
+                    <h3 style="color: #28a745;">No Active Alerts</h3>
+                    <p style="color: #155724; margin-top: 10px;">There are currently no weather warnings in your area.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert-card" style="opacity: 0.5;">
+            <div class="alert-header">
+                <div class="alert-icon">⚠️</div>
+                <div style="flex: 1;">
+                    <h3 class="alert-title">Heavy Rainfall Warning</h3>
+                    <p style="color: #666; margin-top: 10px;">Expected from Jan 20 - Jan 22</p>
+                </div>
+                <span class="alert-severity">MODERATE</span>
+            </div>
+            <p style="color: #666; line-height: 1.6;">Heavy to very heavy rainfall is expected in coastal areas. Stay updated with latest weather information.</p>
+        </div>
+
+        <div class="alert-card" style="opacity: 0.5;">
+            <div class="alert-header">
+                <div class="alert-icon">🌀</div>
+                <div style="flex: 1;">
+                    <h3 class="alert-title">Cyclone Watch</h3>
+                    <p style="color: #666; margin-top: 10px;">Low pressure system in Bay of Bengal</p>
+                </div>
+                <span class="alert-severity" style="background: #ffc107;">LOW</span>
+            </div>
+            <p style="color: #666; line-height: 1.6;">A low pressure area is being monitored. May develop into a cyclonic storm in the next 48-72 hours.</p>
+        </div>
+    </div>
+</body>
+</html>

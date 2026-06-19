@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Prediction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        .rain-card {
+            background: white;
+            color: #333;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        .rain-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .rain-icon {
+            font-size: 80px;
+        }
+        .rain-percentage {
+            font-size: 64px;
+            color: #2a5298;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .hourly-rain {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .hour-box {
+            background: #f0f4f8;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .hour-box h4 {
+            color: #2a5298;
+            margin-bottom: 10px;
+        }
+        .hour-box p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌧️ Rainfall Prediction</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today.html">Today</a></li>
+                <li><a href="rainfall.html">Rainfall</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>🌧️ Rainfall Prediction</h1>
+        
+        <div class="rain-card">
+            <div class="rain-header">
+                <div class="rain-icon">☔</div>
+                <h2>Chance of Rain Today</h2>
+                <div class="rain-percentage">75%</div>
+                <p style="font-size: 18px; color: #666;">Heavy rainfall expected in the evening</p>
+            </div>
+
+            <h3 style="margin: 30px 0 20px; color: #2a5298;">Hourly Rainfall Forecast</h3>
+            <div class="hourly-rain">
+                <div class="hour-box">
+                    <h4>9 AM</h4>
+                    <p>10%</p>
+                </div>
+                <div class="hour-box">
+                    <h4>12 PM</h4>
+                    <p>25%</p>
+                </div>
+                <div class="hour-box">
+                    <h4>3 PM</h4>
+                    <p>60%</p>
+                </div>
+                <div class="hour-box">
+                    <h4>6 PM</h4>
+                    <p>85%</p>
+                </div>
+                <div class="hour-box">
+                    <h4>9 PM</h4>
+                    <p>70%</p>
+                </div>
+                <div class="hour-box">
+                    <h4>12 AM</h4>
+                    <p>40%</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; padding: 20px; background: #fff3cd; border-radius: 10px;">
+                <h3 style="color: #856404;">⚠️ Weather Alert</h3>
+                <p style="color: #856404; margin-top: 10px;">Heavy rainfall warning issued for the next 6 hours. Please carry an umbrella.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
